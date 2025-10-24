@@ -4413,7 +4413,7 @@
                                     return e && !e.isEmpty()
                                 }))
                             }, t.toString = function() {
-                                return this.isValid ? "[" + this.s.toISO() + " – " + this.e.toISO() + ")" : cn
+                                return this.isValid ? "[" + this.s.toISO() + " â€“ " + this.e.toISO() + ")" : cn
                             }, t.toISO = function(e) {
                                 return this.isValid ? this.s.toISO(e) + "/" + this.e.toISO(e) : cn
                             }, t.toISODate = function() {
@@ -4422,7 +4422,7 @@
                                 return this.isValid ? this.s.toISOTime(e) + "/" + this.e.toISOTime(e) : cn
                             }, t.toFormat = function(e, t) {
                                 var n = (void 0 === t ? {} : t).separator,
-                                    i = void 0 === n ? " – " : n;
+                                    i = void 0 === n ? " â€“ " : n;
                                 return this.isValid ? "" + this.s.toFormat(e) + i + this.e.toFormat(e) : cn
                             }, t.toDuration = function(e, t) {
                                 return this.isValid ? this.e.diff(this.s, e, t) : an.invalid(this.invalidReason)
@@ -4554,26 +4554,26 @@
                         return Math.floor(an.fromMillis(i).as("days"))
                     }
                     var fn = {
-                            arab: "[٠-٩]",
-                            arabext: "[۰-۹]",
-                            bali: "[᭐-᭙]",
-                            beng: "[০-৯]",
-                            deva: "[०-९]",
-                            fullwide: "[０-９]",
-                            gujr: "[૦-૯]",
-                            hanidec: "[〇|一|二|三|四|五|六|七|八|九]",
-                            khmr: "[០-៩]",
-                            knda: "[೦-೯]",
-                            laoo: "[໐-໙]",
-                            limb: "[᥆-᥏]",
-                            mlym: "[൦-൯]",
-                            mong: "[᠐-᠙]",
-                            mymr: "[၀-၉]",
-                            orya: "[୦-୯]",
-                            tamldec: "[௦-௯]",
-                            telu: "[౦-౯]",
-                            thai: "[๐-๙]",
-                            tibt: "[༠-༩]",
+                            arab: "[Ù -Ù©]",
+                            arabext: "[Û°-Û¹]",
+                            bali: "[á­-á­™]",
+                            beng: "[à§¦-à§¯]",
+                            deva: "[à¥¦-à¥¯]",
+                            fullwide: "[ï¼-ï¼™]",
+                            gujr: "[à«¦-à«¯]",
+                            hanidec: "[ã€‡|ä¸€|äºŒ|ä¸‰|å››|äº”|å…­|ä¸ƒ|å…«|ä¹]",
+                            khmr: "[áŸ -áŸ©]",
+                            knda: "[à³¦-à³¯]",
+                            laoo: "[à»-à»™]",
+                            limb: "[á¥†-á¥]",
+                            mlym: "[àµ¦-àµ¯]",
+                            mong: "[á -á ™]",
+                            mymr: "[á€-á‰]",
+                            orya: "[à­¦-à­¯]",
+                            tamldec: "[à¯¦-à¯¯]",
+                            telu: "[à±¦-à±¯]",
+                            thai: "[à¹-à¹™]",
+                            tibt: "[à¼ -à¼©]",
                             latn: "\\d"
                         },
                         pn = {
